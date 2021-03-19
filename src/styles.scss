@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin     : 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container-fluid {
+    min-height    : 100vh;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size  : 2rem !important;
+    font-weight: 800 !important;
+}
+
+h2 {
+    font-size  : 1.5rem !important;
+    font-weight: 400 !important;
+}
+
+.btn {
+    width           : 100%;
+    background-color: orange;
+    font-size       : 0.8rem;
+    color           : white;
+}
+
+.stick-bottom {
+    position: absolute;
+    top     : auto;
+    bottom  : 10px;
+}
+
+@media only screen and (max-width: 426px) {
+    h1 {
+        font-size  : 1.5rem !important;
+        font-weight: 600 !important;
+    }
+
+    h2 {
+        font-size  : 1.1rem !important;
+        line-height: 1.2rem !important;
+    }
+}

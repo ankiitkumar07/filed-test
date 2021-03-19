@@ -1,0 +1,26 @@
+<div class="row py-4">
+    <div class="col-md-6 offset-md-2 col-sm-12 my-4">
+        <h1>Book a demo today and <br> get two weeks for <span style="color: rgb(126, 242, 250);">free.</span> Why?</h1>
+        <h2>Because Our AI-Powered Software <br> Will Exceed Your Marketing Goals.</h2>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4 col-sm-12" *ngFor="let user of users$ | async">
+        <div class="card">
+            <div class="card-body">
+                <h3>{{user.firstName}} {{user.lastName}}</h3>
+                <p>{{user.email}}</p>
+                <p>{{user.countryCode}} {{user.phoneNumber}}</p>
+                <p>{{user.monthlyAdvertisingBudget}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 offset-md-4 col-sm-12 stick-bottom">
+        <button class="btn" (click)="navigateToAddUser()">Let's Get Started</button>
+    </div>
+</div>
